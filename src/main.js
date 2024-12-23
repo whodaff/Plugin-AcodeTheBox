@@ -141,6 +141,7 @@ if (window.acode) {
   );
 
   acode.setPluginUnmount(plugin.id, () => {
+    localStorage.removeItem('acode-the-box-installed');
     acodePlugin.destroy();
   });
 }
