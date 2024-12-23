@@ -112,7 +112,7 @@ class AcodePlugin {
 
     if (userComment) {
       window.open(
-        `https://acode.app/plugin/whodaff.plugin.acodethebox/comments?comment=${encodeURIComponent(
+        `https://acode.app/plugin/whodaff.acodethebox.theme/comments?comment=${encodeURIComponent(
           userComment,
         )}`,
         '_blank',
