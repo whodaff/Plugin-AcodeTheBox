@@ -1,0 +1,213 @@
+.ace-acode-the-box {
+  color: #eef3ff; /* Warna teks default */
+  background: #17181A; /* Warna latar belakang */
+
+  .ace_gutter {
+    color: #d6e0f5; /* Warna nomor baris */
+    background-color: #1f2022; /* Warna latar belakang nomor baris */
+  }
+
+  .ace_gutter-active-line {
+    color: #9FEF00; /* Warna nomor baris aktif */
+    text-shadow: 0 0 2px #7cffd6; /* Efek bayangan untuk nomor baris aktif */
+  }
+
+  .ace_print-margin {
+    width: 1px;
+    background: #3d464f; /* Warna batas cetak */
+  }
+
+  .ace_cursor {
+    color: #7cffd6; /* Warna kursor */
+  }
+
+  .ace_marker-layer .ace_selection {
+    background: #4d5360; /* Warna seleksi */
+    border-radius: 0;
+  }
+
+  .ace_multiselect .ace_selection.ace_start {
+    box-shadow: 0 0 3px black; /* Efek bayangan untuk seleksi ganda */
+  }
+
+  .ace_marker-layer .ace_step {
+    background: #d6e0f5; /* Warna tahapan */
+  }
+
+  .ace_marker-layer .ace_bracket {
+    margin: -1px 0 0 -1px;
+    border: 1px solid #eef3ff; /* Warna tanda kurung yang cocok */
+  }
+
+  .ace_marker-layer .ace_active-line {
+    border: 1px solid #4a525a; /* Warna garis aktif */
+    box-sizing: border-box;
+  }
+
+  .ace_marker-layer .ace_selected-word {
+    background-color: rgba(118, 134, 184, 0.19); /* Warna kata yang dipilih */
+  }
+
+  .ace_invisible {
+    color: #505f8d; /* Warna karakter tak terlihat */
+  }
+
+  /**
+   * kata kunci
+   * contoh if else 
+   * ID di css
+   */
+  .hljs-keyword,
+  .ace_keyword {
+    color: #C77AFB; /* Warna kata kunci */
+  }
+
+  .ace_keyword.ace_operator {
+    color: #FF6565; /* Warna operator */
+  }
+
+  .ace_constant.ace_language {
+    color: #FF6565; /* Warna konstanta bahasa */
+  }
+
+  .ace_constant.ace_numeric {
+    color: #9FEF00; /* Warna angka */
+  }
+
+  .ace_constant.ace_character {
+    color: #FF6565; /* Warna karakter */
+  }
+
+  .ace_constant.ace_character.ace_escape {
+    color: #7cffd6; /* Warna karakter escape */
+  }
+
+  .ace_constant.ace_other {
+    color: #FF6565; /* Warna konstanta lainnya */
+  }
+
+  .hljs-title {
+    color: #FFAF00; /* Warna judul */
+  }
+
+  .ace_support.ace_function {
+    color: #d6e0f5; /* Warna fungsi dukungan */
+  }
+
+  .ace_identifier, .ace_support.ace_function.ace_dom {
+    color: #7cffd6; /* Warna pengenal dan fungsi DOM */
+  }
+
+  .ace_support {
+    color: #FFAF00; /* Warna dukungan */
+  }
+
+  .ace_support.ace_constant {
+    color: #FFAF00; /* Warna konstanta dukungan */
+  }
+
+  .ace_class {
+    color: #FFAF00; /* Warna kelas */
+  }
+
+  .ace_variable.ace_language {
+    color: #d6e0f5; /* Warna variabel bahasa */
+    font-weight: bold;
+  }
+
+  .ace_support.ace_type {
+    color: #FFAF00; /* Warna tipe dukungan */
+  }
+
+  .ace_meta.ace_tag {
+    color: #FFAF00; /* Warna tag meta */
+  }
+
+  .ace_storage,
+  .ace_storage.ace_type {
+    color: #FF6565; /* Warna penyimpanan dan tipe penyimpanan */
+  }
+
+  .ace_invalid {
+    color: #d6e0f5; /* Warna tidak valid */
+    background-color: #FF6565; /* Warna latar belakang tidak valid */
+  }
+
+  .ace_invalid.ace_deprecated {
+    color: #d6e0f5; /* Warna tidak valid dan usang */
+    background-color: #6c7380; /* Warna latar belakang tidak valid dan usang */
+  }
+
+  .ace_string {
+    color: #9FEF00; /* Warna string */
+  }
+
+  .ace_comment {
+    font-style: italic;
+    background-color: #2B2D33;
+    color: #646B78; /* Warna komentar */
+  }
+
+  .ace_variable {
+    color: #ffdd7c; /* Warna variabel */
+  }
+
+  .ace_constant {
+    color: #7cffd6; /* Warna konstanta */
+  }
+
+  .hljs-params,
+  .ace_variable.ace_parameter {
+    color: #5CB2FF; /* Warna parameter fungsi */
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .ace_entity.ace_other.ace_attribute-name {
+    color: #ffdd7c; /* Warna atribut HTML */
+    font-style: italic;
+  }
+
+  .ace_xml-pe.ace_xml,
+  .ace_punctuation.ace_tag {
+    color: #eef3ff; /* Warna tanda kurung HTML */
+  }
+
+  .ace_tag-name.ace_tag,
+  .ace_entity.ace_name.ace_tag {
+    color: #FF6565 /* Warna tag HTML */
+  }
+
+  .ace_paren {
+    color: #d6e0f5; /* Warna tanda kurung */
+  }
+
+  /**
+   * jangan rubah indent-guide
+   */
+
+  .ace_indent-guide {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ09NrYAgMjP4PAAtGAwchHMyAAAAAAElFTkSuQmCC)
+      right repeat-y;
+  }
+
+  .ace_indent-guide-active {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQIW2PQ1dX9zzBz5sz/ABCcBFFentLlAAAAAElFTkSuQmCC)
+      right repeat-y;
+  }
+
+  /**
+   * Semua aturan highlight di bawah memerlukan plugin highlight sintaksis tambahan
+  **/
+
+  .ace_support.ace_constant.ace_js {
+    color: #9FEF00; /* Warna konstanta JS */
+  }
+
+  .ace_entity.ace_name.ace_function {
+    color: #d6e0f5; /* Warna nama fungsi */
+  }
+  .ace_support.ace_constant.ace_css-in-js {
+    color: #9FEF00; /* Warna konstanta CSS-in-JS */
+  }
+}

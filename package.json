@@ -1,0 +1,42 @@
+{
+  "name": "acode-the-box",
+  "version": "1.0.2",
+  "description": "Acode The Box Theme plugin for Acode",
+  "main": "dist/main.js",
+  "repository": "https://github.com/whodaff/Plugin-AcodeTheBox",
+  "author": "whodaff",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "build-release": "webpack --mode production",
+    "start-dev": "node .vscode/start-dev"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "html-tag-js": "^1.8.2",
+    "jszip": "^3.10.1",
+    "postcss": "^8.4.49",
+    "sass": "^1.83.0",
+    "terser": ">=5.14.2 ",
+    "webpack": "^5.97.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "live-server": "^1.2.2",
+    "postcss-loader": "^8.1.1",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^16.0.4",
+    "webpack-cli": "^6.0.1"
+  },
+  "browserslist": [
+    "> 0.25%, not dead"
+  ],
+  "resolutions": {
+    "terser": ">=5.14.2 ",
+    "glob-parent": ">=5.1.2"
+  }
+}
