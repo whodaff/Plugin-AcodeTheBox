@@ -51,6 +51,7 @@ class AcodePlugin {
     this.themeName = THEME_NAME;
     this.themePath = THEME_PATH;
     this.isInitialized = false;
+    this.localStorageKey = 'acode-the-box-installed';
   }
 
   async init($page) {
@@ -73,8 +74,12 @@ class AcodePlugin {
 
     settings.on('update', this.onThemeChange.bind(this));
 
-    await this.showSuccessAlert();
-    await this.showCommentPrompt();
+    const isInstalled = localStorage.getItem(this.localStorageKey);
+    if (!isInstalled) {
+      await this.showSuccessAlert();
+      await this.showCommentPrompt();
+      localStorage.setItem(this.localStorageKey, 'true');
+    }
   }
 
   async destroy() {
